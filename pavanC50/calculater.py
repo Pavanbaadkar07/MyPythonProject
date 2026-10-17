@@ -1,0 +1,17 @@
+print("===============================================",)
+x=int(input("Enter A 1st number:"))
+y=int(input("Enter a 2nd number:"))
+print("===============================================",)
+print("The 1st num is",x,"and 2nd is",y)
+print("-----------------------------------------------")
+print("The sum of number is:        ",x+y)
+print("-----------------------------------------------")
+print("The sub of number is:        ",x-y)
+print("-----------------------------------------------")
+print("The muli of number is:       ",x*y)
+print("-----------------------------------------------")
+if y!=0:
+    print("The div of number is:",x/y)
+else:
+    print("******Zero division error*****")
+print("===============================================",)

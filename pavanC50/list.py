@@ -1,0 +1,12 @@
+list=[]
+list.append(10)
+print(list)
+list.extend([20,30,40,50])
+print("List of numbers")
+print(list)
+list.insert(5,60)
+print(list)
+list.insert(2,25)
+print(list)
+list.extend([70,80,90,100])
+print(list)

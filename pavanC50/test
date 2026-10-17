@@ -1,0 +1,43 @@
+students = []
+
+# Ask how many students to enter
+try:
+    num_students = int(input("Enter number of students: "))
+    if num_students <= 0:
+        print("Number of students must be greater than 0.")
+        exit()
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+    exit()
+
+# Loop to collect details for each student
+for i in range(num_students):
+    print(f"\nEnter details for Student {i+1}:")
+    
+    name = input("Name: ").strip()
+    roll_no = input("Roll Number: ").strip()
+    
+    # Validate marks input
+    try:
+        marks = float(input("Marks: "))
+        if marks < 0 or marks > 100:
+            print("Marks should be between 0 and 100.")
+            exit()
+    except ValueError:
+        print("Invalid marks. Please enter a number.")
+        exit()
+    
+    # Store details in a dictionary
+    student = {
+        "Name": name,
+        "Roll Number": roll_no,
+        "Marks": marks
+    }
+    
+    # Add dictionary to the list
+    students.append(student)
+
+# Display all student details
+print("\n--- Student Details ---")
+for idx, student in enumerate(students, start=1):
+    print(f"Student {idx}: Name: {student['Name']}, Roll No: {student['Roll Number']}, Marks: {student['Marks']}")

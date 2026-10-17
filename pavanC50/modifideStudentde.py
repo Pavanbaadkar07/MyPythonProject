@@ -1,0 +1,5 @@
+name=input("Enter a Name of Student:")
+usn=input("Enter a student USN:")
+mark1=int(input("Enter a 1st sub marks:"))
+mark2=int(input("Enter a 2st sub marks:"))
+mark3=int(input("Enter a 3st sub marks:"))
